@@ -1,0 +1,141 @@
+!doctype html>
+<html lang="en">
+
+  <head>
+      {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>About Me</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/carousel/">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+
+<link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+
+<meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="{% url 'home' %}">Sagar Sathyanarayanan</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'me' %}"  >About</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'tennis'%}"  >Athletics</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#"  >Work Exp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'allblogs'%}"  >Blogs/Projects</a>
+
+          <li class="nav-item">
+            <a class="nav-link" href="{% static 'CV University.pdf'%}"target="blank">Resume</a>
+
+      </ul>
+
+
+    </div>
+  </nav>
+</header>
+</br>
+</br>
+
+
+<div class="container marketing">
+<p>I am from Bangalore, India. It is also called the Silicon Valley of India. This leads to the cross-over of many cultures. I moved to the US when I was 18. Before, this I never traveled alone outside the country. I had no family to help me adjust to the culture. I attended Morgan State University for my undergrad which is an HBCU (Historically Black Colleges and Universities) and Univesity of Oregon for my grad school. The two schools are not only located opposite geographically on the map but also are very different culturally. The two different perspectives I received here shaped my understanding of people from different backgrounds. <p>
+    <p> The tennis team at Morgan did not have one single American (US) on the team. The team members hailed from Europe, South America, Caribbeans, and Asia. This helped the team as a group because we were a bunch of misfits trying to settle into the new culture and norm that was thrown at us. The three words that describe me  best from all my experiences are: <b><i>Adaptable</i></b>, <b><i>Diverse</i></b> and, <b><i> Socially aware</i></b>.</p>
+</div>
+
+<div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="{% static 'me.png'%}" alt="Generic placeholder image" width="140" height="140">
+        <h2><b><i>Adaptable</i></b></h2>
+        <p>I was able to able to adapt to a new country and culture without any immediate family around and excel in my education and athletics. I graduated with a GPA of 3.7 /4.0. To take up a business degree that is completely different from a technical degree like engineering required quick and drastic change. Even cultures within the US differed between geo-locations. Going from the Eastcoast to the Westcoast was a completely new experience for me. These constant changes made me look at the same problem from a different angle which has helped in my personal growth.</p>
+
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="{% static 'ss.png'%}" alt="Generic placeholder image" width="140" height="140">
+        <h2><b><i>Diverse</i></b></h2>
+        <p> I am multi-lingual. The languages known to me are: English, Kannada, Hindi, Marathi. I live in Bangalore, Karnataka which is the IT capital of India. This makes it one of the most diverse places in India. People from all over the country and world come to Bangalore. I attended Morgan State University which is an HBCU (Historically Black Colleges and Universities). The tennis team at Morgan did not have one single US citizen. I attended the University of Oregon for my MS which is cultural very different from Morgan. </p>
+
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="{% static 'ss2.png'%}" alt="Generic placeholder image" width="140" height="140">
+        <h2><b><i>Socially Aware</i></b></h2>
+        <p>My diverse background and experiences have made me socially aware and situations around the world. It has definitely helped me be open-minded about someone else opinions that aren't equivalent to mine. Staying six years in the US has helped me to understand not only the cultures of America but also through my tennis team I was able to learn about Europe. Staying away from home gave me a new perspective to look at home and its situation.  </p>
+
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <style>
+      .fa {
+    padding: 2px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: black;
+
+  }
+  </style>
+    <footer class="text-muted" style="text-align:center">
+      <div class="container">
+     <a href="https://www.linkedin.com/in/sagar-sathyanarayanan/" target="_blank" class="fa fa-linkedin"></a>
+     <a href="https://github.com/Sagar-Sathyanarayanan" target="_blank" class="fa fa-github"></a>
+     <a href="mailto:sagarthetennis10k@gmail.com?subject=Hey!, I just visited your web portfolio." class="fa fa-envelope"></a>
+     </div>
+     </footer>
+         </main>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     </body>
+     </html>
+
+  </div>

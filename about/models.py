@@ -1,4 +1,4 @@
 from django.db import models
 
-class Me(models.Model):
+class About(models.Model):
     image = models.ImageField(upload_to='images/')

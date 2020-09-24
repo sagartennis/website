@@ -78,13 +78,13 @@
           <a class="nav-link" href="{% url 'home' %}"><b>Home</b> <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><b>About</b></a>
+          <a class="nav-link" href="{% url 'me'%}"><b>About</b></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"><b>Education</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><b>Athletics</b></a>
+          <a class="nav-link" href="{% url 'tennis'%}"><b>Athletics</b></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"><b>Work Exp</b></a>
@@ -138,49 +138,30 @@
 <div class="socialbtns">
 
 
-  <a href="mailto: sagarthetennis10k@gmail.com"target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope">&nbsp;</i></a>
-<a href="https://www.linkedin.com/in/sagar-sathyanarayanan/" target="_blank"><i class="fa fa-linkedin">&nbsp;</i></a>
-<a href="https://github.com/Sagar-Sathyanarayanan"target="_blank"><i class="fa fa-github"></i></a>
+  <style>
+    .fa {
+  padding: 2px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: black;
+
+}
+</style>
+  <footer class="text-muted" style="text-align:center">
+    <div class="container">
+   <a href="https://www.linkedin.com/in/sagar-sathyanarayanan/" target="_blank" class="fa fa-linkedin"></a>
+   <a href="https://github.com/sagatennis" target="_blank" class="fa fa-github"></a>
+   <a href="mailto:sagarthetennis10k@gmail.com"target="_blank" class="fa fa-envelope"></a>
+   </div>
+   </footer>
+       </main>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   </body>
+   </html>
 
 </div>
-<style>
-  /* square sm icons */
-  a, a:hover {
-      text-decoration: none;
-
-  }
-
-  .socialbtns, .socialbtns ul, .socialbtns li {
-      margin: 0;
-      padding: 5px;
-  }
-
-  .socialbtns li {
-      list-style: none outside none;
-      display: inline-block;
-  }
-
-  .socialbtns .fa {
-      width: 40px;
-      height: 28px;
-      color: #FFF;
-      background-color: #000;
-      padding-top: 12px;
-      transition: all ease 0.5s;
-      -moz-transition: all ease 0.5s;
-      -webkit-transition: all ease 0.5s;
-      -o-transition: all ease 0.5s;
-  }
-
-  .socialbtns .fa:hover {
-      border-radius: 20px;
-      -moz-border-radius: 20px;
-      -webkit-border-radius: 20px;
-      -o-border-radius: 20px;
-      transition: all ease 0.5s;
-      -moz-transition: all ease 0.5s;
-      -webkit-transition: all ease 0.5s;
-      -o-transition: all ease 0.5s;
-  }
-</style>
-</html>

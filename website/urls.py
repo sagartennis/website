@@ -18,12 +18,17 @@ from django.urls import path,include
 from django.conf import settings
 from django.conf.urls.static import static
 import home.views
+import about.views
+import athletics.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home.views.home,name='home'),
     path('blog/',include('blog.urls')),
-    path('me/',include('me.urls')),
+    path('about/',about.views.about,name='me'),
+    path('athletics/',athletics.views.tennis,name='tennis'),
+
+
 
 
 
