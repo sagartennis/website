@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'me.apps.MeConfig',
     'images.apps.ImagesConfig',
     'blog.apps.BlogConfig',
     'home.apps.HomeConfig',
@@ -138,4 +139,3 @@ try:
     from local_settings import *
 except ImportError:
     pass
-
