@@ -22,6 +22,7 @@ import about.views
 import athletics.views
 import education.views
 import work.views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home.views.home,name='home'),
