@@ -8,6 +8,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="generator" content="">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Athletics</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/carousel/">
@@ -60,7 +63,7 @@
           <a class="nav-link" href="{% url 'me'%}"><b>About</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><b>Education</b></a>
+          <a class="nav-link" href="{% url 'uni' %}"><b>Education</b></a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="{% url 'tennis'%}"><b>Athletics</b></a>
@@ -83,306 +86,220 @@
     </div>
   </nav>
 </header>
-<main role="main">
-    <body>
-        <div class="galleryContainer">
-            <div class="slideShowContainer">
-                <div id="playPause" onclick="playPauseSlides()"></div>
-                <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
-                <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
-                <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
-                <div class="imageHolder">
-                    <img src="http://206.189.143.249/media/images/team3.jpg" width="50%" height="450px" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="50%" height="50%" fill="#777"/></img>
-                    <p class="captionText"></p>
-                </div>
-                <div class="imageHolder">
-                    <img src="http://206.189.143.249/media/images/team2_iTlHvtf.jpg"  width="100%" height="550px" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="80%" height="50%" fill="#777"/></img>>
+<br>
+<br>
+<br>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<div class="container">
+	<div class="row">
+		<div class="row">
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" heigth="300" width="300"
+                   data-image="http://206.189.143.249/media/images/team3_RupLc6L.jpg"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="http://206.189.143.249/media/images/team3_RupLc6L.jpg"
+                         alt="Another alt text">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" heigth="300" width="300"
+                   data-image="http://206.189.143.249/media/images/team1_vACGbw5.jpg"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="http://206.189.143.249/media/images/team1_vACGbw5.jpg"
+                         alt="Another alt text">
+                </a>
+            </div>
 
-                </div>
-                <div class="imageHolder">
-                    <img src="http://206.189.143.249/media/images/team1.jpg"  width="100%" height="550px" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="80%" height="50%" fill="#777"/></img>>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" heigth="300" width="300"
+                   data-image="http://206.189.143.249/media/images/team2_CIDjV8r.jpg"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="http://206.189.143.249/media/images/team2_CIDjV8r.jpg"
+                         alt="Another alt text">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" heigth="300" width="300"
+                   data-image="http://206.189.143.249/media/images/team4.jpg"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="http://206.189.143.249/media/images/team4.jpg"
+                         alt="Another alt text">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" heigth="300" width="300"
+                   data-image="http://206.189.143.249/media/images/team5.jpg"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="http://206.189.143.249/media/images/team5.jpg"
+                         alt="Another alt text">
+                </a>
+            </div>
 
-                </div>
 
 
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" heigth="300" width="300"
+                   data-image="http://206.189.143.249/media/images/WhatsApp_Image_2020-09-26_at_11.59.36_AM.jpeg"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="http://206.189.143.249/media/images/WhatsApp_Image_2020-09-26_at_11.59.36_AM.jpeg"
+                         alt="Another alt text">
+                </a>
+            </div>
 
             </div>
-            <div id="dotsContainer"></div>
+
         </div>
-<style>
-    .body{
-    padding: 10px 0 0 0;
-    margin: 0;
-}
-.galleryContainer{
-    width: 100%;
-    height: 550px;
-    max-width: 2000px;
-    margin: auto;
-    user-select: none;
-    box-shadow: 0px 0px 3px 1px #00000078;
 
 
-}
-.galleryContainer .slideShowContainer{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: gainsboro;
-    position: relative;
-}
-.galleryContainer .slideShowContainer #playPause{
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    background-image: url(images/playPause.png);
-    background-repeat: no-repeat;
-    z-index: 5;
-    background-size: cover;
-    margin: 5px;
-    cursor: pointer;
-}
-.galleryContainer .slideShowContainer #playPause:hover{
-    opacity: .7;
-}
-.galleryContainer .slideShowContainer .imageHolder{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    opacity: 0;
-}
-.galleryContainer .slideShowContainer .imageHolder img{
-    width: 100%;
-    height: 100%;
-}
-.galleryContainer .slideShowContainer .imageHolder .captionText{
-    display: none;
-}
+        <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="image-gallery-title"></h4>
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                        </button>
 
-.galleryContainer .slideShowContainer .leftArrow,.galleryContainer .slideShowContainer .rightArrow{
-    width: 50px;
-    background: #00000036;
-    position: absolute;
-    left: 0;
-    z-index: 1;
+                        <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
 
-    height: 72px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.galleryContainer .slideShowContainer .rightArrow{
-    left: auto;
-    right: 0;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-.galleryContainer .slideShowContainer .leftArrow:hover,.galleryContainer .slideShowContainer .rightArrow:hover{
-    background: #000000a8;
-    cursor: pointer;
-}
-.galleryContainer .arrow{
-    display: inline-block;
-    border: 3px solid white;
-    width: 10px;
-    height: 10px;
-    border-left: none;
-    border-bottom: none;
-    margin: auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-.galleryContainer .arrow.arrowLeft{
-    transform: rotateZ(-135deg);
-}
-.galleryContainer .arrow.arrowRight{
-    transform: rotateZ(45deg);
-}
-
-
-
-.galleryContainer .slideShowContainer>.captionTextHolder>.captionText{
-    margin: 0;
-}
-
-.galleryContainer #dotsContainer{
-    width: 100%;
-    height: 10%;
-    text-align: center;
-    padding-top: 20px;
-    box-sizing: border-box;
-}
-.galleryContainer #dotsContainer .dots{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    margin-left: 5px;
-    background-color: #bbb;
-    cursor: pointer;
-    transition:background-color 0.5s;
-}
-.galleryContainer #dotsContainer .dots:first-child{
-    margin-left: 0;
-}
-.galleryContainer #dotsContainer .dots:hover,.galleryContainer #dotsContainer .dots.active{
-    background-color: #717171;;
-}
-
-
-
-
-.galleryContainer .moveLeftCurrentSlide{
-    animation-name: moveLeftCurrent;
-
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
-
-}
-.galleryContainer .moveLeftNextSlide{
-    animation-name: moveLeftNext;
-
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
-}
-@keyframes moveLeftCurrent {
-    from {margin-left: 0;opacity: 1;}
-    to {margin-left: -100%;opacity: 1;}
-}
-@keyframes moveLeftNext {
-    from {margin-left: 100%;opacity: 1;}
-    to {margin-left: 0%;opacity: 1;}
-}
-
-
-.galleryContainer .moveRightCurrentSlide{
-    animation-name: moveRightCurrent;
-
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
-}
-.galleryContainer .moveRightPrevSlide{
-    animation-name: moveRightPrev;
-
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
-}
-@keyframes moveRightCurrent {
-    from {margin-left: 0;opacity: 1;}
-    to {margin-left: 100%;opacity: 1;}
-}
-@keyframes moveRightPrev {
-    from {margin-left: -100%;opacity: 1;}
-    to {margin-left: 0%;opacity: 1;}
-}
-.slideTextFromBottom {
-    animation-name: slideTextFromBottom;
-
-    animation-timing-function: ease-out;
-}
-@keyframes slideTextFromBottom {
-    from {opacity: 0;margin-top: 100px}
-    to {opacity: 1;margin-top: 0px;}
-}
-.slideTextFromTop {
-    animation-name: slideTextFromTop;
-
-    animation-timing-function: ease-out;
-}
-@keyframes slideTextFromTop {
-    from {opacity: 0;margin-top: -100px}
-    to {opacity: 1;margin-top: 0px;}
-}
-</style>
 <script>
-    var slideIndex,slides,dots,captionText;
-function initGallery(){
-    slideIndex = 0;
-    slides=document.getElementsByClassName("imageHolder");
-    slides[slideIndex].style.opacity=1;
+let modalId = $('#image-gallery');
 
-    captionText=document.querySelector(".captionTextHolder .captionText");
-    captionText.innerText=slides[slideIndex].querySelector(".captionText").innerText;
+$(document)
+  .ready(function () {
 
-    //disable nextPrevBtn if slide count is one
-    if(slides.length<2){
-        var nextPrevBtns=document.querySelector(".leftArrow,.rightArrow");
-        nextPrevBtns.style.display="none";
-        for (i = 0; i < nextPrevBtn.length; i++) {
-            nextPrevBtn[i].style.display="none";
+    loadGallery(true, 'a.thumbnail');
+
+    //This function disables buttons when needed
+    function disableButtons(counter_max, counter_current) {
+      $('#show-previous-image, #show-next-image')
+        .show();
+      if (counter_max === counter_current) {
+        $('#show-next-image')
+          .hide();
+      } else if (counter_current === 1) {
+        $('#show-previous-image')
+          .hide();
+      }
+    }
+
+    /**
+     *
+     * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+     * @param setClickAttr  Sets the attribute for the click handler.
+     */
+
+    function loadGallery(setIDs, setClickAttr) {
+      let current_image,
+        selector,
+        counter = 0;
+
+      $('#show-next-image, #show-previous-image')
+        .click(function () {
+          if ($(this)
+            .attr('id') === 'show-previous-image') {
+            current_image--;
+          } else {
+            current_image++;
+          }
+
+          selector = $('[data-image-id="' + current_image + '"]');
+          updateGallery(selector);
+        });
+
+      function updateGallery(selector) {
+        let $sel = selector;
+        current_image = $sel.data('image-id');
+        $('#image-gallery-title')
+          .text($sel.data('title'));
+        $('#image-gallery-image')
+          .attr('src', $sel.data('image'));
+        disableButtons(counter, $sel.data('image-id'));
+      }
+
+      if (setIDs == true) {
+        $('[data-image-id]')
+          .each(function () {
+            counter++;
+            $(this)
+              .attr('data-image-id', counter);
+          });
+      }
+      $(setClickAttr)
+        .on('click', function () {
+          updateGallery($(this));
+        });
+    }
+  });
+
+// build key actions
+$(document)
+  .keydown(function (e) {
+    switch (e.which) {
+      case 37: // left
+        if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
+          $('#show-previous-image')
+            .click();
         }
-    }
+        break;
 
-    //add dots
-    dots=[];
-    var dotsContainer=document.getElementById("dotsContainer"),i;
-    for (i = 0; i < slides.length; i++) {
-        var dot=document.createElement("span");
-        dot.classList.add("dots");
-        dotsContainer.append(dot);
-        dot.setAttribute("onclick","moveSlide("+i+")");
-        dots.push(dot);
-    }
-    dots[slideIndex].classList.add("active");
-}
-initGallery();
-function plusSlides(n) {
-    moveSlide(slideIndex+n);
-}
-function moveSlide(n){
-    var i;
-    var current,next;
-    var moveSlideAnimClass={
-          forCurrent:"",
-          forNext:""
-    };
-    var slideTextAnimClass;
-    if(n>slideIndex) {
-        if(n >= slides.length){n=0;}
-        moveSlideAnimClass.forCurrent="moveLeftCurrentSlide";
-        moveSlideAnimClass.forNext="moveLeftNextSlide";
-        slideTextAnimClass="slideTextFromTop";
-    }else if(n<slideIndex){
-        if(n<0){n=slides.length-1;}
-        moveSlideAnimClass.forCurrent="moveRightCurrentSlide";
-        moveSlideAnimClass.forNext="moveRightPrevSlide";
-        slideTextAnimClass="slideTextFromBottom";
-    }
-
-    if(n!=slideIndex){
-        next = slides[n];
-        current=slides[slideIndex];
-        for (i = 0; i < slides.length; i++) {
-            slides[i].className = "imageHolder";
-            slides[i].style.opacity=0;
-            dots[i].classList.remove("active");
+      case 39: // right
+        if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
+          $('#show-next-image')
+            .click();
         }
-        current.classList.add(moveSlideAnimClass.forCurrent);
-        next.classList.add(moveSlideAnimClass.forNext);
-        dots[n].classList.add("active");
-        slideIndex=n;
-        captionText.style.display="none";
-        captionText.className="captionText "+slideTextAnimClass;
-        captionText.innerText=slides[n].querySelector(".captionText").innerText;
-        captionText.style.display="block";
-    }
+        break;
 
-}
+      default:
+        return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+  });
 
 
 </script>
+
+<style>
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+.thumb{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+</style>
+
 <main role="main">
     <div class="container">
 
 <div>
-</br>
-</br>
+
+
 
 <hr/>
 <p>I started playing tennis at the age of <b>4</b>. When I started, I did not know the sport would change my life forever. The sport taught me discipline, the importance of hard work. But above all, it taught me how to face failures. I competed in all age categories at the national level. </p>
@@ -400,29 +317,20 @@ function moveSlide(n){
 </div>
 
 <style>
-    .fa {
-  padding: 2px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  color: black;
+  .fa {
+padding: 2px;
+font-size: 30px;
+width: 50px;
+text-align: center;
+text-decoration: none;
+border-radius: 50%;
+color: black;
 
 }
 </style>
-  <footer class="text-muted" style="text-align:center">
-    <div class="container">
-   <a href="https://www.linkedin.com/in/sagar-sathyanarayanan/" target="_blank" class="fa fa-linkedin"></a>
-   <a href="https://github.com/Sagar-Sathyanarayanan" target="_blank" class="fa fa-github"></a>
-   <a href="mailto:sagarthetennis10k@gmail.com?subject=Hey!, I just visited your web portfolio." class="fa fa-envelope"></a>
-   </div>
-   </footer>
-       </main>
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-   </body>
-   </html>
 
-</div>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ </body>
+ </html>

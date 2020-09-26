@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+      {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Education</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/carousel/">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+
+<link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+
+<meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="{% url 'home' %}">Sagar Sathyanarayanan</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" >
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="{% url 'home' %}"><b>Home</b> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'me'%}"><b>About</b></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'uni' %}"><b>Education</b></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="{% url 'tennis'%}"><b>Athletics</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><b>Work Exp</b></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'allblogs'%}"><b>Blogs/Projects</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% static 'CV University.pdf'%}"target="blank"><b>Resume</b></a>
+        </li>
+
+      </ul>
+    </div>
+
+
+    </div>
+  </nav>
+</header>
+</br>
+</br>
+
+
+<main role="main">
+  <div class="container">
+  {% for edu in edu.all %}
+
+  <br>
+  <h4>{{edu.degree|safe}}</h4>
+  <h5>{{edu.school_name|safe}}</h5>
+  <h6>{{edu.start_date_pretty}} - {{edu.end_date_pretty}}</h6>
+  {{edu.body|safe}}
+<hr/>
+  {% endfor %}
+  </div>
+  <style>
+    .fa {
+  padding: 2px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: black;
+
+}
+</style>
+  <footer class="text-muted" style="text-align:center">
+    <div class="container">
+   <a href="https://www.linkedin.com/in/sagar-sathyanarayanan/" target="_blank" class="fa fa-linkedin"></a>
+   <a href="https://github.com/sagatennis" target="_blank" class="fa fa-github"></a>
+    <a href="mailto:sagarthetennis10k@gmail.com" target="blank" class="fa fa-envelope"></a>
+   </div>
+   </footer>
+       </main>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   </body>
+   </html>
