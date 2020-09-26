@@ -20,7 +20,7 @@ from django.conf.urls.static import static
 import home.views
 import about.views
 import athletics.views
-
+import education.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,6 +28,7 @@ urlpatterns = [
     path('blog/',include('blog.urls')),
     path('about/',about.views.about,name='me'),
     path('athletics/',athletics.views.tennis,name='tennis'),
+    path('education/',education.views.education,name='uni'),
 
 
 
